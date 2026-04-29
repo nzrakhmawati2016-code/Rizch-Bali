@@ -346,20 +346,17 @@ h1, h2, h3, p{
 }
 
 .steps-container{
-  display:grid;
-  grid-template-columns:repeat(auto-fit,minmax(240px,1fr));
-  gap:20px;
+  .steps-container{
+  display:flex;              /* 🔥 ubah dari grid */
+  overflow-x:auto;
+  gap:15px;
+  scroll-snap-type:x mandatory;
+  scroll-behavior:smooth;
 }
 
-@media(max-width:768px){
-  .steps-container{
-    display:flex;
-    overflow-x:auto;
-    gap:15px;
-  }
-
   .step-card{
-    min-width:80%;
+   min-width:80%;
+    scroll-snap-align:center;
   }
 }
 
