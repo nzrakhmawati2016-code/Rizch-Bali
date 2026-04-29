@@ -336,6 +336,7 @@ h1, h2, h3, p{
 /* 3 LANGKAH PROSES */
 .steps-section {
   margin: 50px 0;
+  overflow: hidden; /* 🔥 TAMBAHKAN DI SINI */
 }
 
 .steps-section h2 {
@@ -344,22 +345,11 @@ h1, h2, h3, p{
   font-size: 28px;
   margin-bottom: 30px;
 }
-
-.steps-container{
-  .steps-container{
-  display:flex;              /* 🔥 ubah dari grid */
-  overflow-x:auto;
-  gap:15px;
-  scroll-snap-type:x mandatory;
-  scroll-behavior:smooth;
+.step-card{
+  min-width:100%;
+  max-width:100%;
+  flex-shrink:0;
 }
-
-  .step-card{
-   min-width:80%;
-    scroll-snap-align:center;
-  }
-}
-
 .step-card{
   background:#fff;
   padding:25px 20px;
@@ -1614,6 +1604,25 @@ footer strong{
     grid-template-columns: repeat(2, 1fr);
   }
 }
+/* ===== STEPS FINAL FIX ===== */
+.steps-wrapper{
+  max-width:320px;
+  margin:0 auto;
+  overflow:hidden;
+}
+
+.steps-container{
+  display:flex;
+  gap:0;
+  transition:transform 0.5s ease;
+}
+
+.step-card{
+  min-width:100%;
+  max-width:100%;
+  flex-shrink:0;
+}
+
 </style>
 </head>
 
@@ -1695,30 +1704,42 @@ footer strong{
 </div> <!-- hero-wrapper -->
 
   <!-- 3 LANGKAH PROSES -->
-  <div class="steps-section">
-    <h2>Cuma 3 Langkah, Dokumen Selesai</h2>
-    <div class="steps-container">
-      <div class="step-card">
-        <div class="step-number">1</div>
-        <span class="step-arrow" aria-hidden="true">→</span>
-        <h3>Chat Konsultasi</h3>
-        <p>Hubungi kami via WhatsApp, jelaskan kebutuhan dokumen Anda. Kami akan informasikan syarat & perkiraan waktu.</p>
-      </div>
-      
-      <div class="step-card">
-        <div class="step-number">2</div>
-        <span class="step-arrow" aria-hidden="true">→</span>
-        <h3>Kirim Data</h3>
-        <p>Kirimkan dokumen pendukung (foto KTP, KK, dll) via WhatsApp. Tim kami verifikasi & proses ke instansi terkait.</p>
-      </div>
-      
-      <div class="step-card">
-        <div class="step-number">3</div>
-        <h3>Dokumen Selesai</h3>
-        <p>Dokumen bisa diambil di kantor kami atau kami antar ke lokasi Anda. Semua 100% asli & tervalidasi.</p>
-      </div>
+<div class="steps-section">
+  <h2>Cuma 3 Langkah, Dokumen Selesai</h2>
+
+<!-- 🔥 TAMBAHAN WRAPPER -->
+  <div class="steps-wrapper">
+
+  <div class="steps-container">
+    
+    <div class="step-card">
+      <div class="step-number">1</div>
+      <h3>Chat Konsultasi</h3>
+      <p>Hubungi kami via WhatsApp, jelaskan kebutuhan dokumen Anda.</p>
     </div>
+
+    <div class="step-card">
+      <div class="step-number">2</div>
+      <h3>Kirim Data</h3>
+      <p>Kirim dokumen via WhatsApp, tim kami akan proses.</p>
+    </div>
+
+    <div class="step-card">
+      <div class="step-number">3</div>
+      <h3>Dokumen Selesai</h3>
+      <p>Dokumen selesai & bisa diantar ke lokasi Anda.</p>
+    </div>
+
   </div>
+
+  <!-- DOT -->
+  <div class="steps-dots">
+    <span class="dot active"></span>
+    <span class="dot"></span>
+    <span class="dot"></span>
+  </div>
+
+</div>
 
   <!-- TRUST SECTION - 4 item dengan yang baru -->
   <div class="trust">
@@ -2219,6 +2240,48 @@ document.addEventListener("DOMContentLoaded", function(){
       }
     }
   });
+
+});
+</script>
+<script>
+document.addEventListener("DOMContentLoaded", function(){
+
+  // ===== MENU =====
+  const toggle = document.getElementById('menuToggle');
+  const menu = document.querySelector('.nav-menu');
+
+  if(toggle && menu){
+    toggle.addEventListener('click', function(){
+      menu.classList.toggle('active');
+      toggle.innerHTML = menu.classList.contains('active') ? "✖" : "☰";
+    });
+  }
+
+  // ===== SLIDER =====
+  const container = document.querySelector('.steps-container');
+  const dots = document.querySelectorAll('.dot');
+  const cards = document.querySelectorAll('.step-card');
+
+  if(!container || cards.length === 0) return;
+
+  let index = 0;
+
+  function updateSlider(){
+    const width = document.querySelector('.steps-wrapper').offsetWidth;
+
+    container.style.transform = `translateX(-${index * width}px)`;
+
+    dots.forEach(dot => dot.classList.remove('active'));
+    if(dots[index]) dots[index].classList.add('active');
+  }
+
+  updateSlider(); // 🔥 WAJIB
+
+  setInterval(() => {
+    index++;
+    if(index >= cards.length) index = 0;
+    updateSlider();
+  }, 3000);
 
 });
 </script>
