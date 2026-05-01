@@ -1145,9 +1145,34 @@ h2{
 
 /* SPLIT SECTION */
 
+.split{
+  display:flex;
+  align-items:stretch; /* 🔥 biar tinggi ikut teks */
+  gap:50px;
+  margin:80px 0;
+  justify-content:center;
+}
+
+/* IMAGE */
+.split-img{
+  flex:0 0 45%;
+  max-width:480px; /* 🔥 biar tidak terlalu melebar */
+  display:flex;
+  align-items:center; /* 🔥 ini penting */
+}
+
 .split-img img{
   width:100%;
-  border-radius:20px;
+  max-height:380px; /* batasi tinggi */
+  object-fit:cover;
+  border-radius:18px;
+}
+
+/* TEXT */
+.split-text{
+  flex:0 0 55%;
+  max-width:600px; /* 🔥 naikkan dari 520 */
+  margin-left:20px; /* 🔥 bikin balance ke gambar */
 }
 
 .split-text h2{
@@ -1158,29 +1183,7 @@ h2{
 .split-text p{
   color:#666;
   font-size:16px;
-}
-.split{
-  display:flex;
-  align-items:center;
-  gap:50px;
-  justify-content:space-between;
-  margin:80px 0;
-}
-
-.split-img{
-  flex:1;
-}
-
-.split-img img{
-  width:100%;
-  height:280px;
-  object-fit:cover;
-  border-radius:18px;
-}
-
-.split-text{
-  flex:1;
-  max-width:520px;
+  line-height:1.7; /* 🔥 biar lebih enak dibaca */
 }
 
 /* MOBILE */
@@ -1191,18 +1194,23 @@ h2{
     text-align:center;
   }
 
+  .split-img{
+    max-width:100%;
+  }
+
   .split-img img{
-    height:220px;
+    height:auto; /* 🔥 biar natural di HP */
   }
 
 }
- 
 
+/* TRUST GRID */
 .trust-grid{
   display:grid;
   grid-template-columns: repeat(2, 1fr);
   gap:20px;
 }
+
 @media(min-width:768px){
   .trust-grid{
     grid-template-columns: repeat(4, 1fr);
@@ -1256,6 +1264,94 @@ h2{
   color:#555;
 }
 
+.artikel-slider{
+  position:relative;
+  max-width:420px;
+  margin:40px auto;
+  overflow:hidden;
+  border-radius:20px;
+}
+
+.artikel-track{
+  display:flex;
+  transition: transform 0.5s ease; /* 🔥 lebih spesifik */
+}
+
+.artikel-card{
+  min-width:100%;
+  position:relative;
+  border-radius:20px;
+  overflow:hidden; /* 🔥 penting */
+}
+
+.artikel-card img{
+  width:100%;
+  height:280px;
+  object-fit:cover;
+}
+
+/* overlay */
+.overlay{
+  position:absolute;
+  inset:0;
+  display:flex;
+  flex-direction:column;
+  justify-content:flex-end;
+  padding:20px;
+  color:#fff;
+  background:linear-gradient(to top, rgba(0,0,0,0.7), transparent);
+}
+
+.overlay h3{
+  font-size:18px;
+  margin:10px 0;
+}
+
+.overlay a{
+  color:#fff;
+  text-decoration:none;
+  font-size:14px;
+}
+
+.date{
+  font-size:12px;
+  opacity:0.8;
+}
+
+/* panah */
+.prev, .next{
+  position:absolute;
+  top:50%;
+  transform:translateY(-50%);
+  background:#fff;
+  border:none;
+  width:35px;
+  height:35px;
+  border-radius:50%;
+  cursor:pointer;
+}
+
+.prev{ left:10px; }
+.next{ right:10px; }
+
+/* dots */
+.artikel-dots{
+  text-align:center;
+  margin-top:10px;
+}
+
+.artikel-dots .dot{
+  display:inline-block;
+  width:8px;
+  height:8px;
+  background:#ccc;
+  border-radius:50%;
+  margin:0 4px;
+}
+
+.artikel-dots .dot.active{
+  background:#111;
+}
 
 .btn-artikel{
   display:inline-block;
@@ -1308,7 +1404,7 @@ h2{
 
 .split-img img{
   width:100%;
-  height:280px;
+  max-height:380px; /* batasi tinggi */
   object-fit:cover;
   border-radius:18px;
 }
@@ -1522,6 +1618,10 @@ footer strong{
 .stat{
   flex:1;
   padding:10px 6px;
+  display:flex;
+  flex-direction:column;
+  justify-content:center;
+  align-items:center;
 }
 
 .stat:not(:last-child){
@@ -1557,20 +1657,26 @@ footer strong{
   .stats-bar{
     padding:20px;
     gap:10px;
+    justify-content:space-around;
   }
-
+  
   .stat-number{
     font-size:20px;
   }
 
   .stat-label{
     font-size:12px;
+    opacity:0.8;
   }
  
   .stat:not(:last-child){
     border-right:none;
   }
 
+  .stats-bar:hover{
+    transform:none;
+    box-shadow:0 20px 60px rgba(0,0,0,0.08);
+  }
 }
 
 </style>
@@ -1735,37 +1841,37 @@ footer strong{
     <div class="vehicle-grid">
 
   <div class="vehicle-card">
-    <img src="produk-skck.jpeg" loading="lazy" alt="Layanan pengurusan SKCK di Bali">
+    <img src="produk-skck.jpg" loading="lazy" alt="Layanan pengurusan SKCK di Bali">
     <h3>SKCK</h3>
     <a href="https://wa.me/62895429358977?text=SKCK">Info Layanan</a>
   </div>
 
   <div class="vehicle-card">
-    <img src="produk-sim.jpeg" loading="lazy" alt="Jasa pengurusan SIM di Bali cepat dan resmi">
+    <img src="produk-sim.jpg" loading="lazy" alt="Jasa pengurusan SIM di Bali cepat dan resmi">
     <h3>SIM</h3>
     <a href="https://wa.me/62895429358977?text=SIM">Info Layanan</a>
   </div>
 
   <div class="vehicle-card">
-    <img src="produk-pasport.jpeg" loading="lazy" alt="Jasa pembuatan paspor di Bali proses mudah">
+    <img src="produk-pasport.jpg" loading="lazy" alt="Jasa pembuatan paspor di Bali proses mudah">
     <h3>Paspor</h3>
     <a href="https://wa.me/62895429358977?text=Paspor">Info Layanan</a>
   </div>
 
   <div class="vehicle-card">
-    <img src="produk-ktp.jpeg" loading="lazy" alt="Jasa pengurusan KTP di Bali tanpa ribet">
+    <img src="produk-ktp.jpg" loading="lazy" alt="Jasa pengurusan KTP di Bali tanpa ribet">
     <h3>KTP</h3>
     <a href="https://wa.me/62895429358977?text=KTP">Info Layanan</a>
   </div>
 
   <div class="vehicle-card">
-    <img src="produk-stnk.jpeg" loading="lazy" alt="Jasa perpanjangan STNK di Bali aman dan legal">
+    <img src="produk-stnk.jpg" loading="lazy" alt="Jasa perpanjangan STNK di Bali aman dan legal">
     <h3>STNK</h3>
     <a href="https://wa.me/62895429358977?text=STNK">Info Layanan</a>
   </div>
 
   <div class="vehicle-card">
-    <img src="produk-kitas.jpeg" loading="lazy" alt="Jasa pengurusan KITAS dan KITAP di Bali untuk WNA">
+    <img src="produk-kitas.jpg" loading="lazy" alt="Jasa pengurusan KITAS dan KITAP di Bali untuk WNA">
     <h3>KITAS / KITAP</h3>
     <a href="https://wa.me/62895429358977?text=STNK">Info Layanan</a>
   </div>
@@ -1806,6 +1912,7 @@ footer strong{
   <img src="testimoni-wa2.jpg" alt="Testimoni WA 2" loading="lazy">
   <img src="testimoni-wa3.jpg" alt="Testimoni WA 3" loading="lazy">
 </div>
+
 <section class="split-section">
 
   <div class="split">
@@ -1816,14 +1923,24 @@ footer strong{
 
   <div class="split-text">
     <h2>Dokumen Aman & Resmi</h2>
+
 <p>
-  Semua proses pengurusan dokumen dilakukan secara legal, transparan, dan mengikuti prosedur resmi yang berlaku di setiap instansi terkait. 
-  Kami memastikan setiap tahapan berjalan dengan benar, mulai dari pengecekan data, pengajuan berkas, hingga dokumen selesai diterbitkan.
+Pengurusan dokumen di Bali seperti SIM, SKCK, paspor, KTP hingga KITAS memerlukan prosedur yang jelas dan sesuai aturan resmi di setiap instansi. 
+Tanpa pemahaman yang tepat, proses bisa menjadi lebih lama, bahkan berisiko terjadi kesalahan administrasi.
 </p>
 
 <p>
-  Dengan pendampingan yang tepat, Anda tidak perlu khawatir terhadap keaslian dokumen maupun risiko kesalahan dalam proses. 
-  Semua dilakukan dengan sistem yang jelas, komunikasi terbuka, dan hasil yang dapat dipertanggungjawabkan.
+Melalui Rizch Service, setiap proses pengurusan dokumen dilakukan secara terarah dan transparan. 
+Mulai dari pengecekan data awal, pengajuan berkas, hingga dokumen selesai diterbitkan, semua tahapan dijalankan sesuai prosedur yang berlaku.
+</p>
+
+<p>
+Dengan pendampingan yang tepat, Anda tidak perlu khawatir terhadap keaslian dokumen maupun kendala dalam proses. 
+Kami memastikan semua berjalan aman, jelas, dan dapat dipertanggungjawabkan.
+</p>
+
+<p>
+Layanan ini membantu Anda menghemat waktu, menghindari kesalahan, dan membuat proses pengurusan dokumen menjadi lebih praktis tanpa harus bolak-balik mengurus sendiri.
 </p>
   </div>
 </div>
@@ -1859,38 +1976,79 @@ Melalui panduan ini, Anda akan memahami gambaran proses secara lebih jelas agar 
         <a href="artikel-panduan.html" class="btn-artikel">Explore</a>
       </div>
     </div>
+<div class="artikel-slider">
 
-    <!-- ARTIKEL ZIG-ZAG -->
-    <div class="artikel-split">
+  <div class="artikel-track">
 
-      <!-- ITEM 1 -->
-      <div class="artikel-item">
-        <img src="perbedaan-sim.jpg" alt="SIM Internasional">
+    
+<!-- 1. SIM -->
+<div class="artikel-card">
+  <img src="perbedaan-sim.jpg" alt="Perbedaan SIM Lokal dan Internasional">
+  <div class="overlay">
+    <span class="date">April 2026</span>
+    <h3>Perbedaan SIM Lokal & Internasional</h3>
+    <a href="artikel-sim.html">Selengkapnya →</a>
+  </div>
+</div>
 
-        <div>
-          <h3>Perbedaan SIM Lokal & Internasional</h3>
-<p>
-SIM Lokal hanya untuk Indonesia 🇮🇩.
-<br><br>
-Ke luar negeri? Gunakan SIM Internasional 🌍 agar perjalanan lebih aman dan lancar.
-</p>
-          <a href="artikel-sim.html" class="btn-artikel">Explore</a>
-        </div>
-      </div>
+<!-- 2. PASPOR -->
+<div class="artikel-card">
+  <img src="syarat-paspor.jpg" alt="Syarat pembuatan paspor di Bali">
+  <div class="overlay">
+    <span class="date">April 2026</span>
+    <h3>Syarat Buat Paspor di Bali</h3>
+    <a href="artikel-paspor.html">Selengkapnya →</a>
+  </div>
+</div>
 
-      <!-- ITEM 2 -->
-      <div class="artikel-item reverse">
-        <img src="syarat-paspor.jpg" alt="Paspor Bali">
+<!-- 3. SKCK -->
+<div class="artikel-card">
+  <img src="membuat-skck.jpg" alt="Cara membuat SKCK di Bali">
+  <div class="overlay">
+    <span class="date">April 2026</span>
+    <h3>Cara Membuat SKCK di Bali</h3>
+    <a href="artikel-skck.html">Selengkapnya →</a>
+  </div>
+</div>
 
-        <div>
-          <h3>Syarat Buat Paspor di Bali</h3>
-          <p>
-            Pembuatan paspor memerlukan dokumen lengkap dan prosedur yang tepat. 
-            Kesalahan kecil bisa menyebabkan penolakan atau penundaan proses.
-          </p>
-          <a href="artikel-paspor.html" class="btn-artikel">Explore</a>
-        </div>
-      </div>
+<!-- 4. KITAS -->
+<div class="artikel-card">
+  <img src="pengurusan-kitas.jpg" alt="Pengurusan KITAS dan KITAP di Bali">
+  <div class="overlay">
+    <span class="date">April 2026</span>
+    <h3>Perbedaan KITAS & KITAP</h3>
+    <a href="artikel-kitas.html">Selengkapnya →</a>
+  </div>
+</div>
+
+<!-- 5. STNK -->
+<div class="artikel-card">
+  <img src="perpanjangan-stnk.jpg" alt="Perpanjangan STNK di Bali">
+  <div class="overlay">
+    <span class="date">April 2026</span>
+    <h3>Perpanjangan STNK di Bali</h3>
+    <a href="artikel-stnk.html">Selengkapnya →</a>
+  </div>
+</div>
+
+
+  </div>
+
+  <!-- PANAH -->
+  <button class="prev">‹</button>
+  <button class="next">›</button>
+
+  <!-- DOT -->
+  <div class="artikel-dots">
+  <span class="dot active"></span>
+  <span class="dot"></span>
+  <span class="dot"></span>
+  <span class="dot"></span>
+  <span class="dot"></span>
+</div>
+
+</div>
+    
 
     </div>
 
@@ -2204,7 +2362,7 @@ document.addEventListener("DOMContentLoaded", function(){
   
   // ===== SLIDER =====
   const container = document.querySelector('.steps-container');
-  const dots = document.querySelectorAll('.dot');
+  const dots = document.querySelectorAll('.steps-dots .dot');
   const cards = document.querySelectorAll('.step-card');
 
   if(!container || cards.length === 0) return;
@@ -2240,6 +2398,46 @@ document.addEventListener("DOMContentLoaded", function(){
 
   updateSlider();
   startSlider();
+
+});
+</script>
+
+<script>
+document.addEventListener("DOMContentLoaded", function(){
+
+const track = document.querySelector('.artikel-track');
+const dots = document.querySelectorAll('.artikel-dots .dot');
+const next = document.querySelector('.next');
+const prev = document.querySelector('.prev');
+
+if(!track || !next || !prev) return;
+
+let index = 0;
+
+function update(){
+  track.style.transform = `translateX(-${index * 100}%)`;
+
+  dots.forEach(d => d.classList.remove('active'));
+  if(dots[index]) dots[index].classList.add('active');
+}
+
+next.onclick = () => {
+  index++;
+  if(index >= dots.length) index = 0;
+  update();
+}
+
+prev.onclick = () => {
+  index--;
+  if(index < 0) index = dots.length - 1;
+  update();
+}
+
+setInterval(()=>{
+  index++;
+  if(index >= dots.length) index = 0;
+  update();
+},4000);
 
 });
 </script>
