@@ -1,37 +1,37 @@
 <!DOCTYPE html>
 <html lang="id">
 <head>
-
     <meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-<title>Biro Jasa Bali Terpercaya - Pengurusan STNK, SIM, SKCK & Dokumen</title>
-
-<meta name="description" content="Rizch Service merupakan biro jasa terpercaya di Bali yang melayani pengurusan STNK, SIM, SKCK, paspor, KITAS, KITAP, mutasi kendaraan, balik nama kendaraan, dan berbagai dokumen resmi lainnya dengan proses cepat dan profesional." />
-
-<meta name="keywords" content="biro jasa Bali, biro jasa Denpasar, pengurusan STNK Bali, pengurusan SIM Bali, SKCK Bali, paspor Bali, KITAS Bali, KITAP Bali, mutasi kendaraan Bali, balik nama kendaraan Bali, Rizch Service" />
-
-<meta name="author" content="Rizch Service" />
-<meta name="robots" content="index, follow" />
-
-<link rel="canonical" href="https://domainanda.com/" />
-
-<!-- Open Graph -->
-<meta property="og:title" content="Biro Jasa Bali Terpercaya - Rizch Service" />
-<meta property="og:description" content="Layanan pengurusan STNK, SIM, SKCK, paspor, KITAS, mutasi kendaraan, dan dokumen resmi lainnya di Bali." />
-<meta property="og:type" content="website" />
-<meta property="og:url" content="https://rizch-service.vercel.app/" />
-<meta property="og:image" content="https://rizch-service.vercel.app/rizch-service-bali.webp" />
-<meta property="og:image:width" content="1200" />
-<meta property="og:image:height" content="630" />
-
-<!-- Twitter Card -->
-<meta name="twitter:card" content="summary_large_image" />
-<meta name="twitter:title" content="Biro Jasa Bali Terpercaya - Rizch Service" />
-<meta name="twitter:description" content="Pengurusan STNK, SIM, SKCK, paspor, dan dokumen resmi lainnya di Bali." />
-<meta name="twitter:image" content="https://domainanda.com/images/rizch-service-bali.webp" />
-
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <title>Biro Jasa Bali Terpercaya - Pengurusan STNK, SIM, SKCK & Dokumen</title>
+    
+    <meta name="description" content="Rizch Service merupakan biro jasa terpercaya di Bali yang melayani pengurusan STNK, SIM, SKCK, paspor, KITAS, KITAP, mutasi kendaraan, balik nama kendaraan, dan berbagai dokumen resmi lainnya dengan proses cepat dan profesional." />
+    <meta name="keywords" content="biro jasa Bali, biro jasa Denpasar, pengurusan STNK Bali, pengurusan SIM Bali, SKCK Bali, paspor Bali, KITAS Bali, KITAP Bali, mutasi kendaraan Bali, balik nama kendaraan Bali, Rizch Service" />
+    <meta name="author" content="Rizch Service" />
+    <meta name="robots" content="index, follow" />
+    
+    <link rel="canonical" href="https://rizch-service.vercel.app/" />
+    
+    <!-- Open Graph -->
+    <meta property="og:title" content="Biro Jasa Bali Terpercaya - Rizch Service" />
+    <meta property="og:description" content="Layanan pengurusan STNK, SIM, SKCK, paspor, KITAS, mutasi kendaraan, dan dokumen resmi lainnya di Bali." />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://rizch-service.vercel.app/" />
+    <meta property="og:image" content="https://rizch-service.vercel.app/rizch-service-bali.webp" />
+    <meta property="og:image:width" content="1200" />
+    <meta property="og:image:height" content="630" />
+    <meta property="og:image:type" content="image/webp" />
+    <meta property="og:site_name" content="Rizch Service Bali" />
+    
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="Biro Jasa Bali Terpercaya - Rizch Service" />
+    <meta name="twitter:description" content="Pengurusan STNK, SIM, SKCK, paspor, dan dokumen resmi lainnya di Bali." />
+    <meta name="twitter:image" content="https://rizch-service.vercel.app/rizch-service-bali.webp" />
+    
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
     <style>
         :root {
             --primary: #1e3c72;
@@ -987,12 +987,101 @@
     color: #e67e22 !important;
 }
 
+/* ====== LAYANAN DOKUMEN LAINNYA ====== */
+.layanan-lain-container {
+    grid-column: 1 / -1;
+    max-width: 900px;
+    margin: 0 auto;
+    width: 100%;
+}
+
+.layanan-dua-kolom {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+    align-items: stretch;
+}
+
+.layanan-item {
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    background: #f8f9fa;
+    border-radius: 12px;
+    border-left: 4px solid #e67e22;
+    transition: all 0.3s ease;
+}
+
+.layanan-header {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 10px;
+}
+
+.layanan-header i {
+    color: #e67e22;
+    font-size: 1.3rem;
+}
+
+.layanan-header span {
+    font-weight: 600;
+    color: #333;
+    font-size: 1rem;
+}
+
+.layanan-item p {
+    font-size: 0.85rem;
+    color: #666;
+    line-height: 1.6;
+    margin: 0;
+    flex-grow: 1;
+}
+
+.layanan-item.skck-full {
+    grid-column: 1 / -1;
+    max-width: 50%;
+    margin: 0 auto;
+}
+
+/* Hover effect for layanan-item */
+.layanan-item:hover {
+    background: #fff3e0 !important;
+    transform: translateY(-5px);
+    box-shadow: 0 8px 25px rgba(230, 126, 34, 0.15);
+}
+
+.layanan-item:hover .layanan-header i {
+    color: #d35400 !important;
+    transform: scale(1.1);
+}
+
+.layanan-item:hover .layanan-header span {
+    color: #e67e22 !important;
+}
+
+
 /* ====== RESPONSIVE ====== */
 
 @media(max-width: 768px) {
     /* Sosial media di navbar disembunyikan */
     .nav-social {
         display: none;
+    }
+
+    /* Layanan Dokumen Lainnya - Mobile */
+    .layanan-dua-kolom {
+        grid-template-columns: 1fr;
+        gap: 15px;
+    }
+
+    .layanan-item {
+        padding: 15px;
+    }
+
+    .layanan-item.skck-full {
+        max-width: 100%;
+        margin: 0;
     }
 
     /* ====== MENU MOBILE ====== */
@@ -1139,6 +1228,7 @@
     }
 }
     </style>
+<base target="_blank">
 </head>
 <body>
 
@@ -1288,9 +1378,9 @@
 
             
         
-<!-- TAMBAHKAN SETELAH 6 CARD UTAMA -->
+<!-- ====== LAYANAN DOKUMEN LAINNYA - RESPONSIF ====== -->
 <div class="services-grid" style="margin-top: 40px;">
-    <div class="service-card" style="grid-column: 1 / -1; max-width: 900px; margin: 0 auto; width: 100%;">
+    <div class="service-card layanan-lain-container">
         <div class="service-icon" style="background: linear-gradient(135deg, #e67e22, #d35400);">
             <i class="fas fa-folder-open"></i>
         </div>
@@ -1298,112 +1388,51 @@
         <p style="text-align: center; color: #666; margin-bottom: 30px; font-size: 0.95rem;">
             Kami juga melayani pengurusan dokumen kependudukan, perjalanan, dan izin tinggal dengan proses cepat & aman.
         </p>
-        
-        <!-- 2 KOLOM GRID - SEIMBANG -->
-        <div class="layanan-dua-kolom" style="
-            display: grid;
-            grid-template-columns: 1fr 1fr;
-            gap: 20px;
-            align-items: stretch;
-        ">
-            <!-- PASPORT -->
-            <div class="layanan-item" style="
-                display: flex;
-                flex-direction: column;
-                padding: 20px;
-                background: #f8f9fa;
-                border-radius: 12px;
-                border-left: 4px solid #e67e22;
-            ">
-                <div style="display: flex; align-items: center; gap: 10px; margin-bottom: 10px;">
-                    <i class="fas fa-passport" style="color: #e67e22; font-size: 1.3rem;"></i>
-                    <span style="font-weight: 600; color: #333; font-size: 1rem;">Paspor</span>
+
+        <div class="layanan-dua-kolom">
+            <div class="layanan-item">
+                <div class="layanan-header">
+                    <i class="fas fa-passport"></i>
+                    <span>Paspor</span>
                 </div>
-                <p style="font-size: 0.85rem; color: #666; line-height: 1.6; margin: 0; flex-grow: 1;">
-                    Pembuatan paspor baru, perpanjangan, penggantian hilang/rusak. Proses ke Imigrasi Denpasar.
-                </p>
+                <p>Pembuatan paspor baru, perpanjangan, penggantian hilang/rusak. Proses ke Imigrasi Denpasar.</p>
             </div>
 
-            <!-- KTP & KK -->
-            <div class="layanan-item" style="
-                display: flex;
-                flex-direction: column;
-                padding: 20px;
-                background: #f8f9fa;
-                border-radius: 12px;
-                border-left: 4px solid #e67e22;
-            ">
-                <div style="display: flex; align-items: center; gap: 10px; margin-bottom: 10px;">
-                    <i class="fas fa-id-card" style="color: #e67e22; font-size: 1.3rem;"></i>
-                    <span style="font-weight: 600; color: #333; font-size: 1rem;">KTP & KK</span>
+            <div class="layanan-item">
+                <div class="layanan-header">
+                    <i class="fas fa-id-card"></i>
+                    <span>KTP & KK</span>
                 </div>
-                <p style="font-size: 0.85rem; color: #666; line-height: 1.6; margin: 0; flex-grow: 1;">
-                    Pembuatan KTP baru, perubahan data, pindah domisili, dan pengurusan Kartu Keluarga.
-                </p>
+                <p>Pembuatan KTP baru, perubahan data, pindah domisili, dan pengurusan Kartu Keluarga.</p>
             </div>
 
-            <!-- SIM -->
-            <div class="layanan-item" style="
-                display: flex;
-                flex-direction: column;
-                padding: 20px;
-                background: #f8f9fa;
-                border-radius: 12px;
-                border-left: 4px solid #e67e22;
-            ">
-                <div style="display: flex; align-items: center; gap: 10px; margin-bottom: 10px;">
-                    <i class="fas fa-car" style="color: #e67e22; font-size: 1.3rem;"></i>
-                    <span style="font-weight: 600; color: #333; font-size: 1rem;">SIM Lokal & Internasional</span>
+            <div class="layanan-item">
+                <div class="layanan-header">
+                    <i class="fas fa-car"></i>
+                    <span>SIM Lokal & Internasional</span>
                 </div>
-                <p style="font-size: 0.85rem; color: #666; line-height: 1.6; margin: 0; flex-grow: 1;">
-                    Pembuatan SIM A/C/D baru, perpanjangan, dan SIM Internasional (IDP) untuk mengemudi di luar negeri.
-                </p>
+                <p>Pembuatan SIM A/C/D baru, perpanjangan, dan SIM Internasional (IDP) untuk mengemudi di luar negeri.</p>
             </div>
 
-            <!-- KITAS & KITAP -->
-            <div class="layanan-item" style="
-                display: flex;
-                flex-direction: column;
-                padding: 20px;
-                background: #f8f9fa;
-                border-radius: 12px;
-                border-left: 4px solid #e67e22;
-            ">
-                <div style="display: flex; align-items: center; gap: 10px; margin-bottom: 10px;">
-                    <i class="fas fa-globe-asia" style="color: #e67e22; font-size: 1.3rem;"></i>
-                    <span style="font-weight: 600; color: #333; font-size: 1rem;">KITAS & KITAP</span>
+            <div class="layanan-item">
+                <div class="layanan-header">
+                    <i class="fas fa-globe-asia"></i>
+                    <span>KITAS & KITAP</span>
                 </div>
-                <p style="font-size: 0.85rem; color: #666; line-height: 1.6; margin: 0; flex-grow: 1;">
-                    Izin tinggal untuk WNA: KITAS (terbatas) & KITAP (permanen). Proses ke Imigrasi Bali.
-                </p>
+                <p>Izin tinggal untuk WNA: KITAS (terbatas) & KITAP (permanen). Proses ke Imigrasi Bali.</p>
             </div>
 
-            <!-- SKCK - FULL WIDTH -->
-            <div class="layanan-item" style="
-                grid-column: 1 / -1;
-                max-width: 50%;
-                margin: 0 auto;
-                display: flex;
-                flex-direction: column;
-                padding: 20px;
-                background: #f8f9fa;
-                border-radius: 12px;
-                border-left: 4px solid #e67e22;
-            ">
-                <div style="display: flex; align-items: center; gap: 10px; margin-bottom: 10px;">
-                    <i class="fas fa-file-alt" style="color: #e67e22; font-size: 1.3rem;"></i>
-                    <span style="font-weight: 600; color: #333; font-size: 1rem;">SKCK</span>
+            <div class="layanan-item skck-full">
+                <div class="layanan-header">
+                    <i class="fas fa-file-alt"></i>
+                    <span>SKCK</span>
                 </div>
-                <p style="font-size: 0.85rem; color: #666; line-height: 1.6; margin: 0; flex-grow: 1;">
-                    Surat Keterangan Catatan Kepolisian untuk keperluan kerja, studi, atau administrasi lainnya.
-                </p>
+                <p>Surat Keterangan Catatan Kepolisian untuk keperluan kerja, studi, atau administrasi lainnya.</p>
             </div>
-
         </div>
     </div>
 </div>
-</section>
-            
+</section>            
 
     <!-- ====== FEATURES ====== -->
     <section class="features section-padding">
