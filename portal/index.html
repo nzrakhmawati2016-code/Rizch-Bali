@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Wati — Biro Jasa Dokumen Bali</title>
+
+<!-- Open Graph untuk WhatsApp / Media Sosial -->
+
+<meta property="og:title" content="Wati — Biro Jasa Dokumen Bali">
+<meta property="og:description" content="Kami membantu expatriat dan pemilik bisnis di Bali mengurus dokumen resmi — mulai dari kendaraan, izin tinggal, hingga dokumen perjalanan. Tanpa ribet, tanpa bolak-balik kantor.">
+
+<meta property="og:image" content="https://rizch-service.vercel.app/wati/rizch-service-bali.jpg">
+<meta property="og:image:secure_url" content="https://rizch-service.vercel.app/wati/rizch-service-bali.jpg">
+<meta property="og:image:type" content="image/jpeg">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://rizch-service.vercel.app/wati/">
+
+<meta name="twitter:card" content="summary_large_image">
+
+
+<style>
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap');
+:root{--deep:#14001F;--primary:#6b21a8;--primary-light:#7c3aed;--primary-dark:#581c87;--accent:#d69e2e;--accent-hover:#b7791f;--dark:#1a202c;--gray:#4a5568;--light-gray:#e2e8f0;--bg:#f7fafc;--white:#ffffff;--success:#38a169}
+*{margin:0;padding:0;box-sizing:border-box}
+body{font-family:'Inter',-apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif;background:var(--bg);color:var(--dark);line-height:1.7;-webkit-font-smoothing:antialiased}
+.container{max-width:680px;margin:0 auto;padding:0 24px}
+.intro{padding:40px 0 30px;text-align:center}
+.intro-text{font-size:1.05rem;color:var(--gray);max-width:520px;margin:0 auto;line-height:1.8}
+.intro-text strong{color:var(--dark);font-weight:600}
+.services{padding:20px 0 40px}
+.section-label{text-align:center;font-size:0.75rem;font-weight:600;text-transform:uppercase;letter-spacing:2px;color:var(--accent);margin-bottom:12px}
+.section-title{text-align:center;font-size:1.5rem;font-weight:700;color:var(--dark);margin-bottom:32px}
+.services-grid{display:grid;grid-template-columns:1fr 1fr;gap:16px}
+.service-card{background:var(--white);border-radius:16px;padding:24px 20px;text-align:center;border:1px solid var(--light-gray);transition:all 0.3s ease}
+.service-card:hover{transform:translateY(-4px);box-shadow:0 12px 24px rgba(20,0,31,0.1);border-color:var(--primary-light)}
+.service-icon{width:48px;height:48px;background:linear-gradient(135deg,rgba(20,0,31,0.06),rgba(107,33,168,0.04));border-radius:14px;display:flex;align-items:center;justify-content:center;margin:0 auto 14px;font-size:1.4rem}
+.service-card h3{font-size:0.95rem;font-weight:600;color:var(--dark);margin-bottom:6px}
+.service-card p{font-size:0.8rem;color:var(--gray);line-height:1.6}
+.service-card.full-width{grid-column:1 / -1;display:flex;align-items:center;text-align:left;gap:16px;padding:20px 24px}
+.service-card.full-width .service-icon{margin:0;min-width:48px}
+.service-card.full-width h3{margin-bottom:4px}
+.why{padding:40px 0;background:var(--white);border-top:1px solid var(--light-gray);border-bottom:1px solid var(--light-gray)}
+.features-list{display:flex;flex-direction:column;gap:20px;max-width:520px;margin:0 auto}
+.feature-item{display:flex;align-items:flex-start;gap:16px}
+.feature-check{min-width:28px;height:28px;background:linear-gradient(135deg,var(--success),#2f855a);border-radius:50%;display:flex;align-items:center;justify-content:center;color:white;font-size:0.8rem;margin-top:2px}
+.feature-text h4{font-size:1rem;font-weight:600;color:var(--dark);margin-bottom:4px}
+.feature-text p{font-size:0.9rem;color:var(--gray);line-height:1.6}
+.process{padding:40px 0}
+.process-steps{display:flex;justify-content:space-between;align-items:center;max-width:480px;margin:0 auto;position:relative}
+.process-steps::before{content:'';position:absolute;top:24px;left:15%;right:15%;height:2px;background:var(--light-gray);z-index:0}
+.step{text-align:center;position:relative;z-index:1;flex:1}
+.step-number{width:48px;height:48px;background:var(--white);border:2px solid var(--deep);border-radius:50%;display:flex;align-items:center;justify-content:center;margin:0 auto 10px;font-weight:700;color:var(--deep);font-size:1rem}
+.step p{font-size:0.8rem;font-weight:600;color:var(--dark)}
+.cta{padding:50px 0 60px;text-align:center}
+.cta-box{background:linear-gradient(160deg,var(--deep) 0%,var(--primary-dark) 60%,var(--primary) 100%);border-radius:24px;padding:40px 30px;color:white;position:relative;overflow:hidden;box-shadow:0 20px 40px rgba(20,0,31,0.15)}
+.cta-box::before{content:'';position:absolute;top:-30%;right:-20%;width:200px;height:200px;background:rgba(124,58,237,0.1);border-radius:50%}
+.cta-box h2{font-size:1.4rem;font-weight:700;margin-bottom:12px;position:relative}
+.cta-box p{font-size:0.95rem;opacity:0.9;margin-bottom:28px;max-width:400px;margin-left:auto;margin-right:auto;position:relative}
+.btn-wa{display:inline-flex;align-items:center;gap:10px;background:#25d366;color:white;text-decoration:none;padding:16px 32px;border-radius:50px;font-weight:600;font-size:1rem;transition:all 0.3s ease;box-shadow:0 4px 16px rgba(37,211,102,0.3);position:relative}
+.btn-wa:hover{transform:translateY(-2px);box-shadow:0 6px 24px rgba(37,211,102,0.4)}
+.btn-wa svg{width:20px;height:20px;fill:currentColor}
+.footer{padding:30px 0 40px;text-align:center;border-top:1px solid var(--light-gray)}
+.footer-info{display:flex;flex-direction:column;gap:8px;margin-bottom:20px}
+.footer-info p{font-size:0.85rem;color:var(--gray);display:flex;align-items:center;justify-content:center;gap:8px}
+.footer-info .icon{font-size:1rem}
+.footer-note{font-size:0.75rem;color:#a0aec0;font-style:italic}
+@media (max-width:480px){.services-grid{grid-template-columns:1fr}.service-card.full-width{flex-direction:column;text-align:center}.service-card.full-width .service-icon{margin:0 auto 14px}.process-steps{flex-direction:column;gap:24px}.process-steps::before{display:none}}
+</style>
+
+</head>
+<body>
+
+<div style="text-align:center;padding:30px 0 10px;">
+    <img src="logo-rizch.png" alt="Rizch Logo" style="max-width:180px;height:auto;">
+</div>
+
+<section class="intro">
+    <div class="container">
+        <p class="intro-text">Kami membantu <strong>expatriat dan pemilik bisnis</strong> di Bali mengurus dokumen resmi — mulai dari kendaraan, izin tinggal, hingga dokumen perjalanan. <strong>Tanpa ribet, tanpa bolak-balik kantor.</strong></p>
+    </div>
+</section>
+
+<section class="services">
+    <div class="container">
+        <p class="section-label">Layanan</p>
+        <h2 class="section-title">Apa yang Bisa Kami Bantu?</h2>
+        <div class="services-grid">
+            <div class="service-card">
+                <div class="service-icon">🚗</div>
+                <h3>Kendaraan</h3>
+                <p>STNK, BPKB, balik nama, mutasi, duplikat hilang</p>
+            </div>
+            <div class="service-card">
+                <div class="service-icon">🪪</div>
+                <h3>SIM</h3>
+                <p>Baru, perpanjangan, SIM Internasional (IDP)</p>
+            </div>
+            <div class="service-card">
+                <div class="service-icon">🛂</div>
+                <h3>KITAS / KITAP</h3>
+                <p>Izin tinggal untuk WNA, proses ke Imigrasi Bali</p>
+            </div>
+            <div class="service-card">
+                <div class="service-icon">🌏</div>
+                <h3>Paspor</h3>
+                <p>Baru, perpanjangan, penggantian hilang/rusak</p>
+            </div>
+            <div class="service-card full-width">
+                <div class="service-icon">📋</div>
+                <div>
+                    <h3>SKCK & Dokumen Lainnya</h3>
+                    <p>Surat Keterangan Catatan Kepolisian, KTP, KK, dan kebutuhan administrasi resmi lainnya.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="why">
+    <div class="container">
+        <p class="section-label">Keunggulan</p>
+        <h2 class="section-title">Mengapa Memilih Kami?</h2>
+        <div class="features-list">
+            <div class="feature-item">
+                <div class="feature-check">✓</div>
+                <div class="feature-text">
+                    <h4>Transparan dari Awal</h4>
+                    <p>Tahapan proses dan estimasi biaya dijelaskan sebelum dimulai. Tidak ada biaya tersembunyi.</p>
+                </div>
+            </div>
+            <div class="feature-item">
+                <div class="feature-check">✓</div>
+                <div class="feature-text">
+                    <h4>Antar-Jemput Dokumen</h4>
+                    <p>Kami jemput dokumen di lokasi Anda, proses, lalu antar kembali. Anda fokus pada bisnis saja.</p>
+                </div>
+            </div>
+            <div class="feature-item">
+                <div class="feature-check">✓</div>
+                <div class="feature-text">
+                    <h4>Update Real-Time</h4>
+                    <p>Progress pengerjaan saya update via WhatsApp setiap hari. Anda selalu tahu status dokumen.</p>
+                </div>
+            </div>
+            <div class="feature-item">
+                <div class="feature-check">✓</div>
+                <div class="feature-text">
+                    <h4>Bergaransi</h4>
+                    <p>Dokumen asli dan resmi dari instansi pemerintah. Garansi uang kembali jika tidak selesai.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="process">
+    <div class="container">
+        <p class="section-label">Cara Kerja</p>
+        <h2 class="section-title">Cukup 3 Langkah</h2>
+        <div class="process-steps">
+            <div class="step">
+                <div class="step-number">1</div>
+                <p>Konsultasi<br>via WA</p>
+            </div>
+            <div class="step">
+                <div class="step-number">2</div>
+                <p>Saya Jemput<br>Dokumen</p>
+            </div>
+            <div class="step">
+                <div class="step-number">3</div>
+                <p>Selesai &<br>Diantar</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="cta">
+    <div class="container">
+        <div class="cta-box">
+            <h2>Butuh Bantuan Dokumen?</h2>
+            <p>Konsultasi gratis — saya bantu cari solusi paling praktis untuk kebutuhan Anda di Bali.</p>
+            <a href="https://wa.me/62895429358977" class="btn-wa" target="_blank">
+                <svg viewBox="0 0 24 24"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+                Chat WhatsApp
+            </a>
+        </div>
+    </div>
+</section>
+
+<footer class="footer">
+    <div class="container">
+        <div class="footer-info">
+            <p><span class="icon">📍</span>Denpasar, Bali</p>
+            <p><span class="icon">🕐</span>Senin – Sabtu, 08.00 – 17.00 WITA</p>
+            <p><span class="icon">📧</span>rizch130299@gmail.com</p>
+        </div>
+        <p class="footer-note">Dokumen asli & resmi dari instansi pemerintah terkait</p>
+    </div>
+</footer>
+
+</body>
+</html>
