@@ -1,0 +1,9 @@
+{
+  "redirects": [
+    {
+      "source": "/rizchform",
+      "destination": "https://rizch-service.vercel.app/portal",
+      "permanent": false
+    }
+  ]
+}
