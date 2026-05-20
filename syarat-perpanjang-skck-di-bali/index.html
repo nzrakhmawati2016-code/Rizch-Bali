@@ -147,9 +147,12 @@
             display: flex; align-items: center; justify-content: center;
         }
         .article-image-wrapper img {
-            width: 100%; height: auto; max-height: 400px;
-            object-fit: cover; display: block; border-radius: 16px;
-        }
+    width: 100%;
+    height: auto;
+    object-fit: contain;
+    display: block;
+    border-radius: 16px;
+}
         .image-fallback { text-align: center; color: var(--secondary); padding: 40px; }
         .image-fallback i { font-size: 3rem; margin-bottom: 10px; }
         .image-fallback p { font-size: 1rem; margin: 0; }
