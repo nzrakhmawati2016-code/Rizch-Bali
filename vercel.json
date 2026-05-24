@@ -1,0 +1,28 @@
+{
+  "rewrites": [
+    {
+      "source": "/syarat-skck-bali",
+      "destination": "/artikel/edukasi/skck/syarat-mengurus-skck-di-bali/index.html"
+    },
+    {
+      "source": "/syarat-perpanjang-stnk",
+      "destination": "/artikel/edukasi/kendaraan/syarat-perpanjang-stnk-di-bali/index.html"
+    },
+    {
+      "source": "/balik-nama-kendaraan",
+      "destination": "/artikel/edukasi/kendaraan/prosedur-balik-nama-kendaraan-di-bali/index.html"
+    },
+    {
+      "source": "/mutasi-kendaraan-bali",
+      "destination": "/artikel/edukasi/kendaraan/mutasi-kendaraan-keluar-masuk-di-bali/index.html"
+    },
+    {
+      "source": "/stnk-hilang-bali",
+      "destination": "/artikel/edukasi/kendaraan/cara-mengurus-stnk-hilang-di-bali/index.html"
+    },
+    {
+      "source": "/jasa-sim-bali",
+      "destination": "/artikel/layanan-sim/index.html"
+    }
+  ]
+}
