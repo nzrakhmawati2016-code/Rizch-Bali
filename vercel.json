@@ -18,7 +18,7 @@
 },
 {
 "source": "/prosedur-balik-nama-kendaraan-bali",
-"destination": "/prosedur-balik-nama-kendaraaan-di-bali.html"
+"destination": "/prosedur-balik-nama-kendaraan-di-bali.html"
 },
 {
 "source": "/syarat-perpanjang-stnk-bali",
@@ -26,10 +26,9 @@
 },
 {
 "source": "/syarat-mengurus-skck-bali",
-"destination": "/syarat-skck-di-bali.html"
+"destination": "/syarat-mengurus-skck-di-bali.html"
 },
 
-```
 {
   "source": "/jasa-pengurusan-sim-bali",
   "destination": "/layanan-sim/index.html"
