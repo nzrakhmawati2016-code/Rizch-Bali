@@ -1,172 +1,180 @@
 {
-  "rewrites": [
-    {
-      "source": "/biaya-balik-nama-motor-bali",
-      "destination": "/artikel/edukasi/kendaraan/biaya-balik-nama-motor-di-bali/index.html"
-    },
-    {
-      "source": "/biaya-perpanjang-stnk-bali",
-      "destination": "/artikel/edukasi/kendaraan/biaya-perpanjang-stnk-di-bali/index.html"
-    },
-    {
-      "source": "/stnk-hilang-bali",
-      "destination": "/artikel/edukasi/kendaraan/cara-mengurus-stnk-hilang-di-bali/index.html"
-    },
-    {
-      "source": "/mutasi-kendaraan-bali",
-      "destination": "/artikel/edukasi/kendaraan/mutasi-kendaraan-keluar-masuk-di-bali/index.html"
-    },
-    {
-      "source": "/prosedur-balik-nama-kendaraan",
-      "destination": "/artikel/edukasi/kendaraan/prosedur-balik-nama-kendaraan-di-bali/index.html"
-    },
-    {
-      "source": "/syarat-perpanjang-stnk-bali",
-      "destination": "/artikel/edukasi/kendaraan/syarat-perpanjang-stnk-di-bali/index.html"
-    },
-    {
-      "source": "/syarat-skck-bali",
-      "destination": "/artikel/edukasi/skck/syarat-mengurus-skck-di-bali/index.html"
-    },
-    {
-      "source": "/syarat-perpanjang-skck-bali",
-      "destination": "/artikel/edukasi/skck/syarat-perpanjang-skck-di-bali/index.html"
-    },
-    {
-      "source": "/jasa-sim-bali",
-      "destination": "/layanan-sim/index.html"
-    },
-    {
-      "source": "/jasa-sim-badung",
-      "destination": "/layanan-sim/badung/index.html"
-    },
-    {
-      "source": "/jasa-sim-denpasar",
-      "destination": "/layanan-sim/denpasar/index.html"
-    },
-    {
-      "source": "/jasa-sim-gianyar",
-      "destination": "/layanan-sim/gianyar/index.html"
-    },
-    {
-      "source": "/jasa-sim-tabanan",
-      "destination": "/layanan-sim/tabanan/index.html"
-    },
-    {
-      "source": "/jasa-skck-bali",
-      "destination": "/layanan-skck/index.html"
-    },
-    {
-      "source": "/jasa-skck-badung",
-      "destination": "/layanan-skck/badung/index.html"
-    },
-    {
-      "source": "/jasa-skck-denpasar",
-      "destination": "/layanan-skck/denpasar/index.html"
-    },
-    {
-      "source": "/jasa-dukcapil-bali",
-      "destination": "/layanan-dukcapil/index.html"
-    },
-    {
-      "source": "/jasa-dukcapil-badung",
-      "destination": "/layanan-dukcapil/badung/index.html"
-    },
-    {
-      "source": "/jasa-dukcapil-denpasar",
-      "destination": "/layanan-dukcapil/denpasar/index.html"
-    },
-    {
-      "source": "/jasa-imigrasi-bali",
-      "destination": "/layanan-imigrasi/index.html"
-    },
-    {
-      "source": "/jasa-imigrasi-badung",
-      "destination": "/layanan-imigrasi/badung/index.html"
-    },
-    {
-      "source": "/jasa-imigrasi-denpasar",
-      "destination": "/layanan-imigrasi/denpasar/index.html"
-    },
-    {
-      "source": "/jasa-paspor-bali",
-      "destination": "/layanan-paspor/index.html"
-    },
-    {
-      "source": "/jasa-paspor-badung",
-      "destination": "/layanan-paspor/badung/index.html"
-    },
-    {
-      "source": "/jasa-paspor-denpasar",
-      "destination": "/layanan-paspor/denpasar/index.html"
-    },
-    {
-      "source": "/jasa-kendaraan-bali",
-      "destination": "/layanan-kendaraan/index.html"
-    },
-    {
-      "source": "/jasa-kendaraan-badung",
-      "destination": "/layanan-kendaraan/badung/index.html"
-    },
-    {
-      "source": "/jasa-kendaraan-denpasar",
-      "destination": "/layanan-kendaraan/denpasar/index.html"
-    },
-    {
-      "source": "/kendaraan",
-      "destination": "/artikel/edukasi/kendaraan/index.html"
-    },
-    {
-      "source": "/sim",
-      "destination": "/artikel/edukasi/sim/index.html"
-    },
-    {
-      "source": "/skck",
-      "destination": "/artikel/edukasi/skck/index.html"
-    },
-    {
-      "source": "/paspor",
-      "destination": "/artikel/edukasi/paspor/index.html"
-    },
-    {
-      "source": "/imigrasi",
-      "destination": "/artikel/edukasi/imigrasi/index.html"
-    },
-    {
-      "source": "/dukcapil",
-      "destination": "/artikel/edukasi/dukcapil/index.html"
-    },
-    {
-      "source": "/layanan-kendaraan",
-      "destination": "/layanan-kendaraan/index.html"
-    },
-    {
-      "source": "/layanan-sim",
-      "destination": "/layanan-sim/index.html"
-    },
-    {
-      "source": "/layanan-skck",
-      "destination": "/layanan-skck/index.html"
-    },
-    {
-      "source": "/layanan-paspor",
-      "destination": "/layanan-paspor/index.html"
-    },
-    {
-      "source": "/layanan-imigrasi",
-      "destination": "/layanan-imigrasi/index.html"
-    },
-    {
-      "source": "/layanan-dukcapil",
-      "destination": "/layanan-dukcapil/index.html"
-    },
-    {
-      "source": "/tips",
-      "destination": "/artikel/tips/index.html"
-    },
-    {
-      "source": "/berita",
-      "destination": "/artikel/berita/index.html"
-    }
-  ]
+"rewrites": [
+{
+"source": "/biaya-balik-nama-motor-bali",
+"destination": "/biaya-balik-nama-motor-di-bali.html"
+},
+{
+"source": "/biaya-perpanjang-stnk-bali",
+"destination": "/syarat-perpanjang-stnk-di-bali.html"
+},
+{
+"source": "/stnk-hilang-bali",
+"destination": "/cara-mengurus-stnk-hilang-di-bali.html"
+},
+{
+"source": "/mutasi-kendaraan-bali",
+"destination": "/mutasi-kendaraan-di-bali.html"
+},
+{
+"source": "/prosedur-balik-nama-kendaraan",
+"destination": "/prosedur-balik-nama-kendaraaan-di-bali.html"
+},
+{
+"source": "/syarat-perpanjang-stnk-bali",
+"destination": "/syarat-perpanjang-stnk-di-bali.html"
+},
+{
+"source": "/syarat-skck-bali",
+"destination": "/syarat-skck-di-bali.html"
+},
+
+```
+{
+  "source": "/jasa-sim-bali",
+  "destination": "/layanan-sim/index.html"
+},
+{
+  "source": "/jasa-sim-badung",
+  "destination": "/layanan-sim/badung/index.html"
+},
+{
+  "source": "/jasa-sim-denpasar",
+  "destination": "/layanan-sim/denpasar/index.html"
+},
+{
+  "source": "/jasa-sim-gianyar",
+  "destination": "/layanan-sim/gianyar/index.html"
+},
+{
+  "source": "/jasa-sim-tabanan",
+  "destination": "/layanan-sim/tabanan/index.html"
+},
+
+{
+  "source": "/jasa-skck-bali",
+  "destination": "/layanan-skck/index.html"
+},
+{
+  "source": "/jasa-skck-badung",
+  "destination": "/layanan-skck/badung/index.html"
+},
+{
+  "source": "/jasa-skck-denpasar",
+  "destination": "/layanan-skck/denpasar/index.html"
+},
+
+{
+  "source": "/jasa-dukcapil-bali",
+  "destination": "/layanan-dukcapil/index.html"
+},
+{
+  "source": "/jasa-dukcapil-badung",
+  "destination": "/layanan-dukcapil/badung/index.html"
+},
+{
+  "source": "/jasa-dukcapil-denpasar",
+  "destination": "/layanan-dukcapil/denpasar/index.html"
+},
+
+{
+  "source": "/jasa-imigrasi-bali",
+  "destination": "/layanan-imigrasi/index.html"
+},
+{
+  "source": "/jasa-imigrasi-badung",
+  "destination": "/layanan-imigrasi/badung/index.html"
+},
+{
+  "source": "/jasa-imigrasi-denpasar",
+  "destination": "/layanan-imigrasi/denpasar/index.html"
+},
+
+{
+  "source": "/jasa-paspor-bali",
+  "destination": "/layanan-paspor/index.html"
+},
+{
+  "source": "/jasa-paspor-badung",
+  "destination": "/layanan-paspor/badung/index.html"
+},
+{
+  "source": "/jasa-paspor-denpasar",
+  "destination": "/layanan-paspor/denpasar/index.html"
+},
+
+{
+  "source": "/jasa-kendaraan-bali",
+  "destination": "/layanan-kendaraan/index.html"
+},
+{
+  "source": "/jasa-kendaraan-badung",
+  "destination": "/layanan-kendaraan/badung/index.html"
+},
+{
+  "source": "/jasa-kendaraan-denpasar",
+  "destination": "/layanan-kendaraan/denpasar/index.html"
+},
+
+{
+  "source": "/kendaraan",
+  "destination": "/artikel/edukasi/kendaraan/index.html"
+},
+{
+  "source": "/sim",
+  "destination": "/artikel/edukasi/sim/index.html"
+},
+{
+  "source": "/skck",
+  "destination": "/artikel/edukasi/skck/index.html"
+},
+{
+  "source": "/paspor",
+  "destination": "/artikel/edukasi/paspor/index.html"
+},
+{
+  "source": "/imigrasi",
+  "destination": "/artikel/edukasi/imigrasi/index.html"
+},
+{
+  "source": "/dukcapil",
+  "destination": "/artikel/edukasi/dukcapil/index.html"
+},
+
+{
+  "source": "/layanan-kendaraan",
+  "destination": "/layanan-kendaraan/index.html"
+},
+{
+  "source": "/layanan-sim",
+  "destination": "/layanan-sim/index.html"
+},
+{
+  "source": "/layanan-skck",
+  "destination": "/layanan-skck/index.html"
+},
+{
+  "source": "/layanan-paspor",
+  "destination": "/layanan-paspor/index.html"
+},
+{
+  "source": "/layanan-imigrasi",
+  "destination": "/layanan-imigrasi/index.html"
+},
+{
+  "source": "/layanan-dukcapil",
+  "destination": "/layanan-dukcapil/index.html"
+},
+
+{
+  "source": "/tips",
+  "destination": "/artikel/tips/index.html"
+},
+{
+  "source": "/berita",
+  "destination": "/artikel/berita/index.html"
+}
+```
+
+]
 }
