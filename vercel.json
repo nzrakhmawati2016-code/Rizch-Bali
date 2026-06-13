@@ -24,7 +24,13 @@
       "source": "/jasa-pengurusan-sim-bali",
       "destination": "/jasa-pengurusan-sim-di-bali.html"
     },
-    { "source": "/artikel", "destination": "/blog-index.html" },
-    { "source": "/artikel/", "destination": "/blog-index.html" }
+    {
+      "source": "/artikel",
+      "destination": "/artikel/blog-index.html"
+    },
+    {
+      "source": "/artikel/",
+      "destination": "/artikel/blog-index.html"
+    }
   ]
 }
