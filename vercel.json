@@ -1,28 +1,88 @@
 {
   "rewrites": [
     {
-      "source": "/syarat-skck-bali",
-      "destination": "/artikel/edukasi/skck/syarat-mengurus-skck-di-bali/index.html"
-    },
-    {
-      "source": "/syarat-perpanjang-stnk",
-      "destination": "/artikel/edukasi/kendaraan/syarat-perpanjang-stnk-di-bali/index.html"
-    },
-    {
-      "source": "/balik-nama-kendaraan",
-      "destination": "/artikel/edukasi/kendaraan/prosedur-balik-nama-kendaraan-di-bali/index.html"
+      "source": "/cara-mengurus-stnk-hilang-bali",
+      "destination": "/cara-mengurus-stnk-hilang-di-bali.html"
     },
     {
       "source": "/mutasi-kendaraan-bali",
-      "destination": "/artikel/edukasi/kendaraan/mutasi-kendaraan-keluar-masuk-di-bali/index.html"
+      "destination": "/mutasi-kendaraan-keluar-masuk-di-bali.html"
     },
     {
-      "source": "/stnk-hilang-bali",
-      "destination": "/artikel/edukasi/kendaraan/cara-mengurus-stnk-hilang-di-bali/index.html"
+      "source": "/prosedur-balik-nama-kendaraan-bali",
+      "destination": "/prosedur-balik-nama-kendaraan-di-bali.html"
     },
     {
-      "source": "/jasa-sim-bali",
-      "destination": "/artikel/layanan-sim/index.html"
+      "source": "/syarat-perpanjang-stnk-bali",
+      "destination": "/syarat-perpanjang-stnk-di-bali.html"
+    },
+    {
+      "source": "/syarat-mengurus-skck-bali",
+      "destination": "/syarat-mengurus-skck-di-bali.html"
+    },
+    {
+      "source": "/jasa-pengurusan-sim-bali",
+      "destination": "/jasa-pengurusan-sim-di-bali.html"
+    },
+    {
+      "source": "/artikel",
+      "destination": "/artikel/blog-index.html"
+    },
+    {
+      "source": "/artikel/",
+      "destination": "/artikel/blog-index.html"
+    },
+    {
+      "source": "/artikel/edukasi/kendaraan/:judul",
+      "destination": "/artikel/edukasi/kendaraan/:judul/index.html"
+    },
+    {
+      "source": "/artikel/edukasi/dukcapil/:judul",
+      "destination": "/artikel/edukasi/dukcapil/:judul/index.html"
+    },
+    {
+      "source": "/artikel/edukasi/imigrasi/:judul",
+      "destination": "/artikel/edukasi/imigrasi/:judul/index.html"
+    },
+    {
+      "source": "/artikel/edukasi/sim/:judul",
+      "destination": "/artikel/edukasi/sim/:judul/index.html"
+    },
+    {
+      "source": "/artikel/edukasi/skck/:judul",
+      "destination": "/artikel/edukasi/skck/:judul/index.html"
+    },
+    {
+      "source": "/artikel/edukasi/paspor/:judul",
+      "destination": "/artikel/edukasi/paspor/:judul/index.html"
+    },
+    {
+      "source": "/artikel/tips/:judul",
+      "destination": "/artikel/tips/:judul/index.html"
+    },
+    {
+      "source": "/layanan-sim/:wilayah",
+      "destination": "/layanan-sim/wilayah/:wilayah/index.html"
+    },
+    {
+      "source": "/layanan-skck/:wilayah",
+      "destination": "/layanan-skck/wilayah/:wilayah/index.html"
+    },
+    {
+      "source": "/layanan-dukcapil/:wilayah",
+      "destination": "/layanan-dukcapil/wilayah/:wilayah/index.html"
+    },
+    {
+      "source": "/layanan-imigrasi/:wilayah",
+      "destination": "/layanan-imigrasi/wilayah/:wilayah/index.html"
+    },
+    {
+      "source": "/layanan-paspor/:wilayah",
+      "destination": "/layanan-paspor/wilayah/:wilayah/index.html"
+    },
+    {
+      "source": "/layanan-kendaraan/:wilayah",
+      "destination": "/layanan-kendaraan/wilayah/:wilayah/index.html"
     }
   ]
 }
