@@ -1,86 +1,45 @@
-<?xml version="1.0" encoding="UTF-8"?>
+<?xml version="1.0" ?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
-  <!-- Pilar Layanan SIM -->
   <url>
-    <loc>https://rizchbali.com/artikel/layanan-sim/index.html</loc>
-    <lastmod>2026-05-26</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>1.0</priority>
+    <loc>https://rizchbali.com/layanan-sim/:wilayah</loc>
+    <lastmod>2026-06-15</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://rizchbali.com/artikel/layanan-sim/badung/index.html</loc>
-    <lastmod>2026-05-26</lastmod>
+    <loc>https://rizchbali.com/layanan-skck/:wilayah</loc>
+    <lastmod>2026-06-15</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://rizchbali.com/layanan-dukcapil/:wilayah</loc>
+    <lastmod>2026-06-15</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://rizchbali.com/layanan-imigrasi/:wilayah</loc>
+    <lastmod>2026-06-15</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://rizchbali.com/layanan-paspor/:wilayah</loc>
+    <lastmod>2026-06-15</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://rizchbali.com/layanan-kendaraan/:wilayah</loc>
+    <lastmod>2026-06-15</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://rizchbali.com/layanan-sim</loc>
+    <lastmod>2026-05-28</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.9</priority>
-  </url>
-  <url>
-    <loc>https://rizchbali.com/artikel/layanan-sim/denpasar/index.html</loc>
-    <lastmod>2026-05-26</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.9</priority>
-  </url>
-  <url>
-    <loc>https://rizchbali.com/artikel/layanan-sim/gianyar/index.html</loc>
-    <lastmod>2026-05-26</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.9</priority>
-  </url>
-  <url>
-    <loc>https://rizchbali.com/artikel/layanan-sim/tabanan/index.html</loc>
-    <lastmod>2026-05-26</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.9</priority>
-  </url>
-
-  <!-- Pilar Layanan SKCK -->
-  <url>
-    <loc>https://rizchbali.com/artikel/layanan-skck/index.html</loc>
-    <lastmod>2026-05-26</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>1.0</priority>
-  </url>
-  <url>
-    <loc>https://rizchbali.com/artikel/layanan-skck/badung/index.html</loc>
-    <lastmod>2026-05-26</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.9</priority>
-  </url>
-  <url>
-    <loc>https://rizchbali.com/artikel/layanan-skck/denpasar/index.html</loc>
-    <lastmod>2026-05-26</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.9</priority>
-  </url>
-
-  <!-- Pilar Layanan Dukcapil -->
-  <url>
-    <loc>https://rizchbali.com/artikel/layanan-dukcapil/index.html</loc>
-    <lastmod>2026-05-26</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>1.0</priority>
-  </url>
-
-  <!-- Pilar Layanan Imigrasi -->
-  <url>
-    <loc>https://rizchbali.com/artikel/layanan-imigrasi/index.html</loc>
-    <lastmod>2026-05-26</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>1.0</priority>
-  </url>
-
-  <!-- Pilar Layanan Paspor -->
-  <url>
-    <loc>https://rizchbali.com/artikel/layanan-paspor/index.html</loc>
-    <lastmod>2026-05-26</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>1.0</priority>
-  </url>
-
-  <!-- Pilar Layanan Kendaraan -->
-  <url>
-    <loc>https://rizchbali.com/artikel/layanan-kendaraan/index.html</loc>
-    <lastmod>2026-05-26</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>1.0</priority>
   </url>
 </urlset>
