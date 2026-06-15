@@ -1,91 +1,57 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
-        xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">
+<?xml version="1.0" ?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
-    <loc>https://rizchbali.com/artikel/edukasi/kendaraan/biaya-balik-nama-motor-di-bali/index.html</loc>
-    <lastmod>2026-05-25T04:40:05+00:00</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.7</priority>
-    <image:image>
-      <image:loc>https://rizchbali.com/artikel/edukasi/kendaraan/biaya-balik-nama-motor-di-bali/biaya-balik-nama-motor-di-bali.webp</image:loc>
-    </image:image>
+    <loc>https://rizchbali.com/artikel/edukasi/kendaraan/:judul</loc>
+    <lastmod>2026-06-15</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://rizchbali.com/artikel/edukasi/kendaraan/biaya-perpanjang-stnk-di-bali/index.html</loc>
-    <lastmod>2026-05-25T04:44:32+00:00</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.7</priority>
-    <image:image>
-      <image:loc>https://rizchbali.com/artikel/edukasi/kendaraan/biaya-perpanjang-stnk-di-bali/biaya-perpanjang-stnk-di-bali.webp</image:loc>
-    </image:image>
+    <loc>https://rizchbali.com/artikel/edukasi/dukcapil/:judul</loc>
+    <lastmod>2026-06-15</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://rizchbali.com/artikel/edukasi/kendaraan/cara-mengurus-stnk-hilang-di-bali/index.html</loc>
-    <lastmod>2026-05-25T04:42:12+00:00</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.7</priority>
-    <image:image>
-      <image:loc>https://rizchbali.com/artikel/edukasi/kendaraan/cara-mengurus-stnk-hilang-di-bali/cara-mengurus-stnk-hilang-di-bali.webp</image:loc>
-    </image:image>
+    <loc>https://rizchbali.com/artikel/edukasi/imigrasi/:judul</loc>
+    <lastmod>2026-06-15</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://rizchbali.com/artikel/edukasi/kendaraan/mutasi-kendaraan-keluar-masuk-di-bali/index.html</loc>
-    <lastmod>2026-05-24T12:46:14+00:00</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.7</priority>
-    <image:image>
-      <image:loc>https://rizchbali.com/artikel/edukasi/kendaraan/mutasi-kendaraan-keluar-masuk-di-bali/mutasi-kendaraan-keluar-masuk-di-bali.webp</image:loc>
-    </image:image>
+    <loc>https://rizchbali.com/artikel/edukasi/sim/:judul</loc>
+    <lastmod>2026-06-15</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://rizchbali.com/artikel/edukasi/kendaraan/prosedur-balik-nama-kendaraan-di-bali/index.html</loc>
-    <lastmod>2026-05-24T13:05:53+00:00</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.7</priority>
-    <image:image>
-      <image:loc>https://rizchbali.com/artikel/edukasi/kendaraan/prosedur-balik-nama-kendaraan-di-bali/prosedur-balik-nama-kendaraan.webp</image:loc>
-    </image:image>
+    <loc>https://rizchbali.com/artikel/edukasi/skck/:judul</loc>
+    <lastmod>2026-06-15</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://rizchbali.com/artikel/edukasi/kendaraan/syarat-perpanjang-stnk-di-bali/index.html</loc>
-    <lastmod>2026-05-24T07:55:59+00:00</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.7</priority>
-    <image:image>
-      <image:loc>https://rizchbali.com/artikel/edukasi/kendaraan/syarat-perpanjang-stnk-di-bali/syarat-perpanjang-stnk.webp</image:loc>
-    </image:image>
+    <loc>https://rizchbali.com/artikel/edukasi/paspor/:judul</loc>
+    <lastmod>2026-06-15</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://rizchbali.com/artikel/edukasi/skck/syarat-mengurus-skck-di-bali/index.html</loc>
-    <lastmod>2026-05-24T07:57:30+00:00</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.7</priority>
-    <image:image>
-      <image:loc>https://rizchbali.com/artikel/edukasi/skck/syarat-mengurus-skck-di-bali/syarat-skck.webp</image:loc>
-    </image:image>
+    <loc>https://rizchbali.com/artikel/edukasi/kendaraan/biaya-balik-nama-motor-di-bali</loc>
+    <lastmod>2026-05-25</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://rizchbali.com/artikel/edukasi/skck/syarat-perpanjang-skck-di-bali/index.html</loc>
-    <lastmod>2026-05-24T07:33:33+00:00</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.7</priority>
-    <image:image>
-      <image:loc>https://rizchbali.com/artikel/edukasi/skck/syarat-perpanjang-skck-di-bali/syarat-perpanjang-skck-bali.webp</image:loc>
-    </image:image>
+    <loc>https://rizchbali.com/artikel/edukasi/kendaraan/biaya-perpanjang-stnk-di-bali</loc>
+    <lastmod>2026-05-25</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://rizchbali.com/artikel/edukasi/kendaraan/mutasi-kendaraan-keluar-masuk-di-bali/template-kendaraan-artikel-index .html</loc>
-    <lastmod>2026-05-25T04:38:20+00:00</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.6</priority>
-    <image:image>
-      <image:loc>https://rizchbali.com/artikel/edukasi/kendaraan/mutasi-kendaraan-keluar-masuk-di-bali/mutasi-kendaraan-keluar-masuk-di-bali.webp</image:loc>
-    </image:image>
-  </url>
-  <url>
-    <loc>https://rizchbali.com/artikel/edukasi/kendaraan/template-kendaraan-artikel-index .html</loc>
-    <lastmod>2026-05-25T04:47:50+00:00</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.7</priority>
+    <loc>https://rizchbali.com/artikel/edukasi/skck/syarat-perpanjang-skck-di-bali</loc>
+    <lastmod>2026-05-24</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
   </url>
 </urlset>
