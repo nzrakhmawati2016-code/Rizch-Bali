@@ -1240,27 +1240,15 @@ content="Melayani pengurusan STNK, SIM, SKCK, paspor, KTP, KK, KITAS, KITAP, mut
 }
     </style>
 
+<!-- ====== SCHEMA: Organization (Brand - JANGAN DIGANTI) ====== -->
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
-  "@type": "LocalBusiness",
+  "@type": "Organization",
+  "@id": "https://rizchbali.com/#organization",
   "name": "Rizch Bali",
-  "image": "https://rizchbali.com/images/logo/logo-rizch.png",
-  "@id": "https://rizchbali.com/",
   "url": "https://rizchbali.com/",
-  "telephone": "+62895429358977",
-  "description":"Biro jasa Bali terpercaya untuk pengurusan STNK, SIM, SKCK, paspor, dan dokumen resmi lainnya."
-  "address": {
-    "@type": "PostalAddress",
-    "streetAddress": "Jl. Tunjungsari Gang Menuri 1 Blok B no 6",
-    "addressLocality": "Denpasar",
-    "addressRegion": "Bali",
-    "postalCode": "80119",
-    "addressCountry": "ID"
-  },
-  "areaServed": "Bali",
-  "priceRange": "$$",
-  "openingHours": "Mo-Sa 08:00-17:00",
+  "logo": "https://rizchbali.com/images/logo/logo-rizch.png",
   "sameAs": [
     "https://www.instagram.com/rizchservicebali",
     "https://www.facebook.com/rizchpendampingandokumenpribadi",
@@ -1269,6 +1257,160 @@ content="Melayani pengurusan STNK, SIM, SKCK, paspor, KTP, KK, KITAS, KITAP, mut
 }
 </script>
 
+<!-- ====== SCHEMA: LocalBusiness (LOKASI - GANTI KALAU PINDAH) ====== -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "ProfessionalService",
+  "@id": "https://rizchbali.com/#localbusiness",
+  "name": "Rizch Bali - Denpasar",
+  "url": "https://rizchbali.com/",
+  "telephone": "+62895429358977",
+  "image": [
+    "https://rizchbali.com/images/logo/logo-rizch.png",
+    "https://rizchbali.com/rizch-service-bali.jpg"
+  ],
+  "description": "Biro jasa Bali terpercaya untuk pengurusan STNK, SIM, SKCK, paspor, dan dokumen resmi lainnya.",
+  "priceRange": "$$",
+  
+  "parentOrganization": {
+    "@id": "https://rizchbali.com/#organization"
+  },
+  
+  "address": {
+    "@type": "PostalAddress",
+    "streetAddress": "Jl. Tunjungsari Gang Menuri 1 Blok B no 6",
+    "addressLocality": "Denpasar",
+    "addressRegion": "Bali",
+    "postalCode": "80119",
+    "addressCountry": "ID"
+  },
+  
+  "geo": {
+    "@type": "GeoCoordinates",
+    "latitude": -8.670458,
+    "longitude": 115.212629
+  },
+  
+  "openingHoursSpecification": [
+    {
+      "@type": "OpeningHoursSpecification",
+      "dayOfWeek": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"],
+      "opens": "08:00",
+      "closes": "17:00"
+    }
+  ],
+  
+  "areaServed": {
+    "@type": "State",
+    "name": "Bali"
+  },
+  
+  "hasOfferCatalog": {
+    "@type": "OfferCatalog",
+    "name": "Layanan Dokumen",
+    "itemListElement": [
+      {
+        "@type": "Offer",
+        "itemOffered": {
+          "@type": "Service",
+          "name": "Pengurusan STNK"
+        }
+      },
+      {
+        "@type": "Offer",
+        "itemOffered": {
+          "@type": "Service",
+          "name": "Pengurusan SIM"
+        }
+      },
+      {
+        "@type": "Offer",
+        "itemOffered": {
+          "@type": "Service",
+          "name": "Pengurusan SKCK"
+        }
+      },
+      {
+        "@type": "Offer",
+        "itemOffered": {
+          "@type": "Service",
+          "name": "Pengurusan Paspor"
+        }
+      }
+    ]
+  }
+}
+</script>
+
+<!-- ====== SCHEMA: FAQPage (TAMBAH BARU) ====== -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "Berapa lama proses pengurusan dokumen di Bali?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Lama proses pengurusan tergantung pada jenis layanan dan kelengkapan dokumen yang diperlukan. Tim RizchBali akan memberikan informasi estimasi waktu pengerjaan sesuai layanan yang Anda butuhkan dan membantu memastikan proses berjalan dengan mudah, cepat, dan aman."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Apakah hanya melayani dokumen kendaraan saja?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Tidak. Selain pengurusan dokumen kendaraan, RizchBali juga membantu berbagai kebutuhan dokumen resmi lainnya seperti paspor, KTP, KK, SIM, SKCK, KITAS, KITAP, dan layanan terkait lainnya dengan proses yang mudah, aman, dan transparan."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Bagaimana cara mengetahui estimasi biaya pengurusan dokumen?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Anda dapat berkonsultasi secara gratis melalui WhatsApp untuk mengetahui estimasi biaya sesuai jenis layanan dan kelengkapan dokumen yang diperlukan. RizchBali akan memberikan informasi biaya secara transparan sebelum proses dimulai, tanpa biaya tersembunyi."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Apakah RizchBali melayani pengurusan dokumen dari luar Bali?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Ya. RizchBali membantu berbagai kebutuhan pengurusan dokumen sesuai jenis layanan dan ketentuan yang berlaku. Silakan konsultasikan kebutuhan Anda untuk mendapatkan informasi mengenai persyaratan, estimasi waktu, dan proses yang diperlukan."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Apakah dokumen yang diurus asli dan resmi?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Ya. RizchBali membantu pengurusan dokumen resmi sesuai prosedur yang berlaku melalui instansi terkait. Kami mengutamakan keamanan, transparansi, dan kepercayaan pelanggan dalam setiap proses layanan yang kami berikan."
+      }
+    }
+  ]
+}
+</script>
+
+<!-- ====== SCHEMA: WebSite (TAMBAH BARU) ====== -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "WebSite",
+  "@id": "https://rizchbali.com/#website",
+  "url": "https://rizchbali.com/",
+  "name": "Rizch Bali",
+  "potentialAction": {
+    "@type": "SearchAction",
+    "target": {
+      "@type": "EntryPoint",
+      "urlTemplate": "https://rizchbali.com/?s={search_term_string}"
+    },
+    "query-input": "required name=search_term_string"
+  }
+}
+</script>
 
 
 </head>
