@@ -60,29 +60,42 @@
       "source": "/artikel/tips/:judul",
       "destination": "/artikel/tips/:judul/index.html"
     },
-    {
-      "source": "/layanan-sim/:wilayah",
-      "destination": "/layanan-sim/wilayah/:wilayah/index.html"
-    },
-    {
-      "source": "/layanan-skck/:wilayah",
-      "destination": "/layanan-skck/wilayah/:wilayah/index.html"
-    },
-    {
-      "source": "/layanan-dukcapil/:wilayah",
-      "destination": "/layanan-dukcapil/wilayah/:wilayah/index.html"
-    },
-    {
-      "source": "/layanan-imigrasi/:wilayah",
-      "destination": "/layanan-imigrasi/wilayah/:wilayah/index.html"
-    },
-    {
-      "source": "/layanan-paspor/:wilayah",
-      "destination": "/layanan-paspor/wilayah/:wilayah/index.html"
-    },
-    {
-      "source": "/layanan-kendaraan/:wilayah",
-      "destination": "/layanan-kendaraan/wilayah/:wilayah/index.html"
+{
+  "source": "/layanan-sim/:kabupaten",
+  "destination": "/layanan-sim/:kabupaten/index.html"
+},
+{
+  "source": "/layanan-sim/:kabupaten/:kelurahan",
+  "destination": "/layanan-sim/:kabupaten/:kelurahan/index.html"
+},
+{
+  "source": "/layanan-skck/:kabupaten",
+  "destination": "/layanan-skck/:kabupaten/index.html"
+},
+{
+  "source": "/layanan-skck/:kabupaten/:kelurahan",
+  "destination": "/layanan-skck/:kabupaten/:kelurahan/index.html"
+},
+{
+   "source": "/layanan-dukcapil/:kabupaten",
+   "destination": "/layanan-dukcapil/:kabupaten/index.html"
+},
+{
+  "source": "/layanan-imigrasi/:kabupaten",
+  "destination": "/layanan-imigrasi/:kabupaten/index.html"
+},
+{
+   "source": "/layanan-paspor/:kabupaten",
+  "destination": "/layanan-paspor/:kabupaten/index.html"
+},
+{
+  "source": "/layanan-kendaraan/:kabupaten",
+  "destination": "/layanan-kendaraan/:kabupaten/index.html"
+},
+{
+  "source": "/layanan-kendaraan/:kabupaten/:kelurahan",
+  "destination": "/layanan-kendaraan/:kabupaten/:kelurahan/index.html"
+
     }
   ]
 }
