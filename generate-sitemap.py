@@ -315,7 +315,7 @@ def update_robots_txt():
     """Tambah sitemap ke robots.txt."""
     robots_content = f"""User-agent: *
 Allow: /
-Disallow: /images/
+
 
 Sitemap: {BASE_URL}/sitemap.xml
 Sitemap: {BASE_URL}/sitemap-edukasi.xml
